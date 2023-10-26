@@ -33,7 +33,7 @@ spec:
         tier: api
     spec:
       containers:
-      - image: moonsungkim/nodejs:1
+      - image: moonsungkim/nodejs:3
         imagePullPolicy: Always
         name: api-app
         env:
