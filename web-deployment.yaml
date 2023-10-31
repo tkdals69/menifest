@@ -34,7 +34,7 @@ spec:
         tier: web
     spec:
       containers:
-      - image: moonsungkim/react:6
+      - image: moonsungkim/react:7
         imagePullPolicy: Always
         name: web-app
         ports:
