@@ -34,7 +34,7 @@ spec:
         tier: web
     spec:
       containers:
-      - image: klksm2/react:1
+      - image: klksm2/react:16
         imagePullPolicy: Always
         name: web-app
         ports:

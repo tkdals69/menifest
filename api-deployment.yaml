@@ -33,7 +33,7 @@ spec:
         tier: api
     spec:
       containers:
-      - image: klksm2/nodejs:7
+      - image: klksm2/nodejs:16
         imagePullPolicy: Always
         name: api-app
         env:
