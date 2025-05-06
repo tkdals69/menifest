@@ -7,7 +7,7 @@ metadata:
 spec:
   ports:
     - port: 8080
-      targetPort: 5000
+      targetPort: 8100
   selector:
     app: ingress-project
     tier: api
@@ -33,7 +33,7 @@ spec:
         tier: api
     spec:
       containers:
-      - image: moonsungkim/nodejs:7
+      - image: klksm2/nodejs:7
         imagePullPolicy: Always
         name: api-app
         env:
@@ -45,5 +45,5 @@ spec:
                 name: mysql-pass
                 key: password
         ports:
-        - containerPort: 5000
+        - containerPort: 8100
           name: api-app
