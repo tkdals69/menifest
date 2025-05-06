@@ -6,7 +6,7 @@ metadata:
     app: ingress-project
 spec:
   ports:
-    - port: 8200
+    - port: 3306
   selector:
     app: ingress-project
     tier: mysql
@@ -70,7 +70,7 @@ spec:
           - name: MYSQL_DATABASE
             value: myapp
           ports:
-          - containerPort: 8200
+          - containerPort: 3306
             name: mysql
           volumeMounts:
           - name: mysql-persistent-storage
